@@ -1,0 +1,11 @@
+{
+  "name": "4",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": "./dist/main.js",
+  "scripts": {
+    "build": "del-cli dist *.tsbuildinfo && parcel build",
+    "typecheck": "tsc --noEmit"
+  }
+}

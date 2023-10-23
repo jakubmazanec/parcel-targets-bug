@@ -1,0 +1,19 @@
+{
+  "name": "2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    "types": "./dist/main.d.ts",
+    "import": "./dist/main.js"
+  },
+  "source": "src/main.ts",
+  "scripts": {
+    "build": "del-cli dist *.tsbuildinfo && parcel build",
+    "typecheck": "tsc --noEmit"
+  },
+  "targets": {
+    "module": {},
+    "types": {}
+  }
+}
